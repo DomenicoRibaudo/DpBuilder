@@ -8,7 +8,10 @@ public class Main {
         personBuilder.setAge(21);
         personBuilder.setAddress("Via Roma");
         Person person1 = personBuilder.build();
-        System.out.println(person1);
+        System.out.println("Persona creata con personBuilder : " + person1);
+
+        Person person2 = new Person("Marco", "Polo",23, "Via Genova");
+        System.out.println("Persona creata con costruttore : " + person2);
     }
 }
 
